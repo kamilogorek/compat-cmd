@@ -31,7 +31,7 @@
   },
   "scripts": {
     "test": "tape test/*.js | tap-spec",
-    "coverage": "rm -rf coverage && nyc -- tape test/*.js --verbose",
+    "coverage": "rm -rf .nyc_output && nyc -- tape test/*.js --verbose",
     "lint": "eslint {bin,lib,test}/**",
     "validate": "npm ls"
   },
